@@ -1,21 +1,51 @@
 # FishFYI Embed Widget
 
-> Embeddable FishFYI widgets for any website. Zero dependencies, Shadow DOM isolation, 4 themes (light/dark/sepia/auto).
+> Fish species, marine biology. Embeddable widgets for any website. Zero dependencies, Shadow DOM isolation.
 
 ## Quick Start
 
-Add to any HTML page:
-- Script: <script src="https://cdn.jsdelivr.net/npm/fishfyi-embed@1/dist/embed.min.js"></script>
+```html
+<script src="https://cdn.jsdelivr.net/npm/fishfyi-embed@1/dist/embed.min.js"></script>
+<div data-fishfyi="iucn-badge" data-slug="example"></div>
+```
+
+## Available Widget Types (7)
+
+- entity: `data-fishfyi="entity"`
+- glossary: `data-fishfyi="glossary"`
+- guide: `data-fishfyi="guide"`
+- compare: `data-fishfyi="compare"`
+- search: `data-fishfyi="search"`
+- iucn-badge (interactive): `data-fishfyi="iucn-badge"`
+- water-type (interactive): `data-fishfyi="water-type"`
+
+## Customization
+
+- **Themes**: light, dark, sepia, auto (follows system preference)
+- **Sizes**: compact (280px), default (420px), large (720px)
+- **Styles**: modern, classic
+
+```html
+<div data-fishfyi="iucn-badge" data-slug="example"
+     data-theme="auto" data-size="compact" data-style-variant="modern"></div>
+```
+
+## Integration Methods
+
+1. **Script tag** (recommended): `<script src="https://cdn.jsdelivr.net/npm/fishfyi-embed@1/dist/embed.min.js"></script>`
+2. **iframe**: `https://fishfyi.com/iframe/entity/{slug}/`
+3. **oEmbed**: `https://fishfyi.com/oembed?url={page_url}&format=json`
+4. **Badge**: `https://fishfyi.com/badge/site.svg`
 
 ## Links
 
 - Main site: https://fishfyi.com
 - Widget docs: https://widget.fishfyi.com
-- npm: https://www.npmjs.com/package/fishfyi-embed
+- API documentation: https://fishfyi.com/developers/
+- npm package: https://www.npmjs.com/package/fishfyi-embed
 - GitHub: https://github.com/fyipedia/fishfyi-embed
-- API: https://fishfyi.com/developers/
 
-## Nature FYI Widget Family
+## Nature FYI Widget Network
 
 - [SpeciesFYI Widget](https://widget.speciesfyi.com)
 - [BirdFYI Widget](https://widget.birdfyi.com)
