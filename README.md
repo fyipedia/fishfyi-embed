@@ -176,6 +176,17 @@ Part of [FYIPedia](https://fyipedia.com) — open-source developer tools ecosyst
 | PlantFYI | [plantfyi.com](https://plantfyi.com) | 379,774 plants, hardiness zones, bloom seasons, gardening | [npm](https://www.npmjs.com/package/plantfyi-embed) |
 | DinoFYI | [dinofyi.com](https://dinofyi.com) | 6,142 dinosaurs, geological periods, paleontology | [npm](https://www.npmjs.com/package/dinofyi-embed) |
 
+## Embed Widget
+
+Embed [FishFYI](https://fishfyi.com) widgets on any website with [fishfyi-embed](https://widget.fishfyi.com):
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/fishfyi-embed@1/dist/embed.min.js"></script>
+<div data-fishfyi="entity" data-slug="example"></div>
+```
+
+Zero dependencies · Shadow DOM · 4 themes (light/dark/sepia/auto) · [Widget docs](https://widget.fishfyi.com)
+
 ## License
 
 MIT — see [LICENSE](./LICENSE).
