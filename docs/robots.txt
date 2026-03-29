@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# FishFYI Embed Widget
+# Main site: https://fishfyi.com
+# Widget docs: https://widget.fishfyi.com
+# npm: https://www.npmjs.com/package/fishfyi-embed
